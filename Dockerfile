@@ -14,6 +14,7 @@ RUN apt-get update && \
   chmod u+x ./vma && \
   mv ./vma /usr/local/bin && \
   ln -sf /usr/lib/x86_64-linux-gnu/libiscsi.so.7 /usr/lib/x86_64-linux-gnu/libiscsi.so.1 && \
+  apt install -y libproxmox-backup-qemu0 libcurl3-gnutls libjemalloc2 && \
   mkdir -p /backup && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
