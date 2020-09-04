@@ -1,6 +1,8 @@
-# PVE VMA extract
+# Multi virtual images converter
 
-Image with all the necessary dependencies to extract a "backup" file from ProxmoxVE.
+This container main purpose is to be a swiss knife to convert images and dump from various virtualization platforms
+
+Uses Proxmox VE 6 tools to extract backups, qemu-img to convert from diffrent formats
 
 The image exposes `/backup` as a good place to mount the folder with the backup.
 
